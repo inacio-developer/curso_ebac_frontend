@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Oxanium:wght@500&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+  padding: 20px 0;
+  background-color: #ca0013;
+}
+
+.areaSize {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 80%;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.name-logo {
+  display: flex;
+  align-items: center;
+}
+
+.name-logo svg {
+  margin-right: 18px;
+}
+
+.name-logo h1 {
+  font-family: 'Holtwood One SC';
+  letter-spacing: 2px;
+  color: #fddc09
+}
+
+nav a {
+  font-family: "oxanium";
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-bottom: 4px;
+  margin-top: 8px;
+  border-bottom: 3.2px solid transparent;
+  color: #fddc09;
+  transition: ease-in-out .2s;
+}
+
+nav a:not(a:nth-child(5)) {
+  margin-right: 15px;
+}
+
+nav a:hover {
+  border-bottom: 2px solid #fddc09;
+}
+
+.news {
+  width: 100%;
+}
+
+.notices {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 03.2% 10% 04% 10%;
+} 
+
+#sport {
+  background-color:  #c0e0eb;
+}
+#entertainment {
+  background-color: #f9ed99;
+}
+#culture {
+  background-color:   #7cc576;
+}
+#science {
+  background-color:  #e2c695;
+}
+
+#city {
+  background-color: #404350;
+}
+
+h2 {
+  width: 100%;
+  font-family: "oxanium";
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ca0013;
+  margin-bottom: 30px;
+  color: #ca0013;
+}
+
+article {
+  width: 23%;
+  padding: 5px;
+}
+
+.prevImg {
+  width: 100%;
+  height: 150px;
+}
+
+article img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.date {
+  font-size: 13px;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+time {
+  font-size: 13px;
+}
+
+.title-notice {
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 19px;
+  transition: ease-in .2s;
+  color:#ca0013;
+  cursor: pointer;
+}
+
+.title-notice:hover {
+  color:#E21D31;
+}
+
+p {
+  margin-top: 4px;
+  font-size: 13px;
+  line-height: 17px;
+}
