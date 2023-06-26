@@ -158,6 +158,29 @@ time {
 
 p {
   margin-top: 4px;
+  margin-bottom: 9px;
   font-size: 13px;
   line-height: 17px;
+}
+
+.btnPosition {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.readMore {
+  padding: 6px 6px;
+  text-decoration: none;
+  font-family: "oxanium";
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #ca0013;
+  background-color: #fddc09;
+  border-radius: 3px;
+  box-shadow: -1px 0 5px rgb(64, 67, 80, 0.5);
+  transition: ease-in .3s;
+}
+.readMore:hover {
+  background-color: #E6DE02;
 }
