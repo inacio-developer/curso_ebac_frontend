@@ -100,7 +100,6 @@ nav a:hover {
 #science {
   background-color:  #e2c695;
 }
-
 #city {
   background-color: #404350;
 }
@@ -176,11 +175,46 @@ p {
   font-size: 13px;
   text-transform: uppercase;
   color: #ca0013;
-  background-color: #fddc09;
   border-radius: 3px;
   box-shadow: -1px 0 5px rgb(64, 67, 80, 0.5);
   transition: ease-in .3s;
 }
-.readMore:hover {
-  background-color: #E6DE02;
+.readSport {
+  background-color: #A3BBD4;
+}
+
+.readSport:hover {
+  background-color: #A4A2E0;
+}
+
+.readEntertainment {
+  background-color: #E3CD7F;
+}
+
+.readEntertainment:hover {
+  background-color: #FAEC7F;
+}
+
+.readCulture {
+  background-color: #A3DB79;
+}
+
+.readCulture:hover {
+  background-color: #83F279;
+}
+
+.readScience {
+  background-color: #F0B492;
+}
+
+.readScience:hover {
+  background-color: #D9AA79;
+}
+
+.readCity {
+  background-color: #45555C;
+}
+
+.readCity:hover {
+  background-color: #505F73;
 }
