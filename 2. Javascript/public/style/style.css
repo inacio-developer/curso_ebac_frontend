@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+
+    background-color: #252526;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 400px;
+    height: 320px;
+    padding: 20px;
+    color: #F2F2F2;
+    background-color: #252526;
+    border-radius: 4px;
+}
+
+.form {
+    border: 4px solid #3f3f3f;
+}
+
+.form-correct {
+    border: 4px solid #6BBE49;
+    animation: 2.5s alternate correctAnimation infinite;
+}
+
+.form-incorrect {
+    border: 4px solid #F20F38;
+    animation: 2.5s alternate incorrectAnimation infinite;
+}
+
+@keyframes correctAnimation {
+    0% {
+        border-right: 4px solid #377120;
+    }
+
+    35% {
+        border-bottom: 4px solid #377120;
+    }
+
+    70% {
+        border-left: 4px solid #377120;
+    }
+
+    100% {
+        border-top: 4px solid #377120;
+    }
+}
+
+@keyframes incorrectAnimation {
+    0% {
+        border-right: 4px solid #BF0426;
+    }
+
+    35% {
+        border-bottom: 4px solid #BF0426;
+    }
+
+    70% {
+        border-left: 4px solid #BF0426;
+    }
+
+    100% {
+        border-top: 4px solid #BF0426;
+    }
+}
+
+
+label {
+    display: block;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1.5px solid #404040;
+    border-radius: 3px;
+}
+
+.verify {
+    display: none;
+    padding: 9px;
+    border-radius: 4px;
+    color: #F2F2F2;
+}
+
+.msg-accept {
+    display: block;
+    border: 2.2px solid #377120;
+    background-color: #6BBE49;
+}
+
+.msg-error {
+    display: block;
+    background-color: #F20F38;
+    border: 2.2px solid #BF0426;
+}
+
+.color-error {
+    font-size: 10px;
+    padding: 4px 2px;
+    border-radius: 4px;
+    background-color: #BF0426;
+}
+
+input[type="submit"]{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #F2F2F2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+    cursor: pointer;
+
+    transition: .4s linear;
+}
+
+.submit {
+    background-color: #404040;
+}
+
+.submit:hover {
+    background-color: #333333;
+}
+
+.bg-error {
+    background-color: #F20F38;
+    border: 2.2px solid #BF0426;
+}
+
+.bg-error:hover {
+    background-color: #BF0426;
+}
+
+.bg-correct {
+    border: 2.2px solid #377120;
+    background-color: #6BBE49;
+}
+
+.bg-correct:hover {
+    background-color: #377120;
+}
