@@ -1,0 +1,23 @@
+@use "../abstracts/variables.scss";
+@use "../abstracts/mixins.scss";
+@use "../components/button.scss";
+
+section {
+    padding: 56px 0;
+}
+
+.products {
+    width: 100%;
+    margin-top: 40px;
+
+    display: grid;
+    @include mixins.grid(3, 32.66%);
+}
+
+.product-item {
+    img {
+        width: 100%;
+        border-radius: 16px;   
+    }
+}
+

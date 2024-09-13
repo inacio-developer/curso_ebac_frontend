@@ -1,0 +1,10 @@
+@use "../abstracts/variables.scss";
+
+body {
+    font-family: variables.$font-family;
+    background-color: variables.$background-color;
+}
+
+li {
+    list-style: none;
+}

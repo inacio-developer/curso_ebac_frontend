@@ -1,0 +1,22 @@
+@use "../abstracts/variables.scss";
+@use "../abstracts/mixins.scss";
+
+@media screen and (max-width: variables.$tablet) {
+    .container {
+        @include mixins.containerWidth(80%);
+    }
+
+    .products {
+        @include mixins.grid(2, 48.5%, 3%);
+    }
+}
+
+@media screen and (max-width: variables.$mobile) {
+    .products {
+        display: block;
+    }
+
+    .product-item  {
+        margin-bottom: 32px;
+    }
+}

@@ -1,0 +1,7 @@
+@use "../abstracts/mixins.scss";
+
+.container {
+    @include mixins.containerWidth();
+    width: 100%;
+    margin: 0 auto;
+}
