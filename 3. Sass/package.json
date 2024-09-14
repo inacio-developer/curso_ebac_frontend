@@ -2,12 +2,14 @@
   "name": "exercise-sass",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass source/scss/main.scss build/styles.css --watch"
   },
   "author": "Rafael Inácio",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.78.0"
+  }
 }
