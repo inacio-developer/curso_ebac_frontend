@@ -1,0 +1,12 @@
+@import "../abstracts/_responsive.less";
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 32.66%);
+    column-gap: 1%;
+    row-gap: 4%;
+    @media @minTablet {    
+            grid-template-columns: repeat(2, 48.5%);
+            column-gap: 3%;
+    }
+  }

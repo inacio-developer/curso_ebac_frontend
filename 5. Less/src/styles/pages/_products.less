@@ -1,0 +1,25 @@
+@import "../abstracts/_responsive.less";
+@import "../abstracts/_mixins.less";
+@import "../components/_btn.less";
+
+.products {
+    margin-top: 40px;
+    width: 100%;
+    .grid();
+
+    @media @minMobile {
+        display: block;
+    }
+}
+
+.product-item {
+    img {   
+        width: 100%;
+        border-radius: 16px;
+    }
+
+    @media @minMobile {
+        margin-bottom: 32px;
+    }
+}
+
