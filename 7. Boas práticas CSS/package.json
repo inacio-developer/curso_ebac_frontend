@@ -1,0 +1,15 @@
+{
+  "name": "boas_praticas_css",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass src/styles/main.scss dist/main.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rafael Inacio",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.79.1"
+  }
+}
