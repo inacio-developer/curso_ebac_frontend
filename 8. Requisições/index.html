@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Github</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body class="body-form">
+    <form class="form">
+      <label for="nickname" class="form__label">
+        enter the name of the user you want to search for
+      </label>
+      <div class="form__user__name__field">
+        <input id="nickname" class="form__username container" type="text" />
+        <span class="form__username__at">@</span>
+      </div>
+      <div class="form__user__btn__field">
+        <button class="form__search">Search</button>
+      </div>
+    </form>
+    <div class="msg">
+      <span class="msg__error">...</span>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
