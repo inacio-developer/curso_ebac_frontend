@@ -1,19 +1,12 @@
 import { HomeAppliances } from "./homeAppliances.js";
 
 class Freezer extends HomeAppliances {
-  constructor(name, model, brand, price, connection, liters, temperature = 0) {
-    super(name, model, brand, price, connection);
-    this.liters = liters;
-    let _temperature = this.getStatus() === "on" ? temperature : 0;
-    this.open = false;
+  #_temperature = 0;
 
-    this.addTemperature = (value) => {
-      value ? (_temperature = value) : _temperature++;
-    };
-    this.reduceTemperature = (value) => {
-      value ? (_temperature = value) : _temperature--;
-    };
-    this.getTemperature = () => _temperature;
+  constructor(model, brand, price, connection, liters) {
+    super("Freezer", model, brand, price, connection);
+    this.liters = liters;
+    this.open = false;
   }
 
   open() {
@@ -23,6 +16,14 @@ class Freezer extends HomeAppliances {
   close() {
     this.open = false;
   }
+
+  addTemperature = (value) => {
+    value ? (this.#_temperature = value) : this.#_temperature++;
+  };
+  reduceTemperature = (value) => {
+    value ? (this.#_temperature = value) : this.#_temperature--;
+  };
+  getTemperature = () => _this.#_temperature;
 }
 
 export { Freezer };

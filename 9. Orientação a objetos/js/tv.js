@@ -1,8 +1,8 @@
 import { HomeAppliances } from "./homeAppliances.js";
 
 class TV extends HomeAppliances {
-  constructor(name, model, brand, price, connection, smartTV, inches, entries) {
-    super(name, model, brand, price, connection);
+  constructor(model, brand, price, connection, smartTV, inches, entries) {
+    super("TV", model, brand, price, connection);
     this.smartTV = smartTV;
     this.inches = inches;
     this.entries = entries;
