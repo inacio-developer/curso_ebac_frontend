@@ -16,4 +16,4 @@ const students = [
   { name: "Joseph", score: 7.7 },
 ];
 
-const approved = students.filter((student) => student.score >= 8);
+const approved = students.filter((student) => student.score >= 6);
